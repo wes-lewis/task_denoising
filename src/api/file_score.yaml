@@ -1,5 +1,5 @@
 type: file
-example: resources/score.h5ad
+example: resources_test/denoising/pancreas/score.h5ad
 info:
   label: Score
   summary: "File indicating the score of a metric."

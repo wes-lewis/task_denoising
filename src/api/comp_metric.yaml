@@ -5,7 +5,7 @@ info:
     label: Metric
     summary: A metric.
     description: |
-      A metric for evaluating method predictions.
+      A metric for evaluating denoised datasets.
 arguments:
   - name: "--input_test"
     __merge__: file_test_h5ad.yaml
@@ -25,5 +25,5 @@ test_resources:
   - type: python_script
     path: /common/comp_tests/run_and_check_adata.py
   - path: /common/library.bib
-  #TODO: - path: fill in e.g. /resources/denoising/pancreas
-  #TODO:   dest:  fill in e.g. resources/denoising/pancreas
+  - path: fill in e.g. /resources/denoising/pancreas
+    dest:  fill in e.g. resources/denoising/pancreas

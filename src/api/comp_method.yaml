@@ -5,11 +5,11 @@ info:
     label: Method
     summary: A method.
     description: |
-      A method to predict the task effects.
+      A denoising method to remove noise (i.e. technical artifacts) from a dataset.
 arguments:
   - name: --train_h5ad
     __merge__: file_train_h5ad.yaml
-    required: false
+    required: true
     direction: input
   - name: --output
     __merge__: file_prediction.yaml
@@ -21,5 +21,5 @@ test_resources:
   - type: python_script
     path: /common/component_tests/check_method_config.py
   - path: /common/library.bib
-  #TODO: - path: fill in e.g. /resources/denoising/pancreas
-  #TODO:   dest:  fill in e.g. resources/denoising/pancreas
+  - path: fill in e.g. /resources/denoising/pancreas
+    dest:  fill in e.g. resources/denoising/pancreas

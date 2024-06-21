@@ -15,5 +15,3 @@ info:
         name: dataset_id
         description: "A unique identifier for the dataset"
         required: true
-    # obs: 
-    #   ...
