@@ -22,6 +22,6 @@ functionality:
       required: true
   test_resources:
     - type: python_script
-      path: /src/common/comp_tests/run_and_check_adata.py
+      path: common/comp_tests/run_and_check_adata.py
     - path: /resources_test/common/pancreas
       dest: resources_test/common/pancreas
