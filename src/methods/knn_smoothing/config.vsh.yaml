@@ -38,6 +38,7 @@ engines:
         github:
           - scottgigante-immunai/knn-smoothing@python_package
 runners:
+  - type: executable
   - type: nextflow
     directives: 
       label: [midtime, highmem, highcpu]

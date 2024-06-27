@@ -19,6 +19,7 @@ engines:
     image: ghcr.io/openproblems-bio/base_python:1.0.4
 
 runners:
+  - type: executable
   - type: nextflow
     directives: 
       label: [midtime, midmem, midcpu]

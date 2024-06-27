@@ -58,6 +58,7 @@ engines:
       - type: python
         pip: [scprep, magic-impute, scipy, scikit-learn<1.2]
 runners:
+  - type: executable
   - type: nextflow
     directives: 
       label: [midtime, highmem, highcpu]

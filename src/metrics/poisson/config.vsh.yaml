@@ -23,6 +23,7 @@ engines:
       - type: python
         pip: scprep
 runners:
+  - type: executable
   - type: nextflow
     directives: 
       label: [midtime, highmem, midcpu]

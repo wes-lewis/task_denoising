@@ -25,6 +25,7 @@ engines:
           - scikit-learn
           - scprep
 runners:
+  - type: executable
   - type: nextflow
     directives: 
       label: [midtime, highmem, midcpu]

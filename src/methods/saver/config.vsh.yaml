@@ -28,6 +28,7 @@ engines:
       - type: r
         github: mohuangx/SAVER
 runners:
+  - type: executable
   - type: nextflow
     directives: 
       label: [midtime, highmem, highcpu]

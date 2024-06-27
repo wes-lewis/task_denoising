@@ -32,6 +32,7 @@ engines:
           - numpy
           - scipy
 runners:
+  - type: executable
   - type: nextflow
     directives:
       label: [highmem, midcpu , midtime]

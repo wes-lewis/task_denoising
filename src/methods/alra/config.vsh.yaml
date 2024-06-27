@@ -39,6 +39,7 @@ engines:
         cran: [ Matrix, rsvd ]
         github: KlugerLab/ALRA
 runners:
+  - type: executable
   - type: nextflow
     directives: 
       label: [midtime, highmem, highcpu]

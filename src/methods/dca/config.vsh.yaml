@@ -40,6 +40,7 @@ engines:
           - jsonschema
           - "git+https://github.com/scottgigante-immunai/dca.git@patch-1"
 runners:
+  - type: executable
   - type: nextflow
     directives: 
       label: [midtime, highmem, highcpu]
