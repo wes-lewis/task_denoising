@@ -21,6 +21,6 @@ arguments:
     required: true
 test_resources:
   - type: python_script
-    path: common/comp_tests/run_and_check_adata.py
+    path: common/component_tests/run_and_check_output.py
   - path: /resources_test/common/pancreas
     dest: resources_test/common/pancreas
