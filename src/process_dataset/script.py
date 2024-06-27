@@ -11,7 +11,7 @@ par = {
     'seed': 0
 }
 meta = {
-    "functionality_name": "process_dataset",
+    "name": "process_dataset",
     "resources_dir": "src/tasks/denoising/process_dataset"
 }
 ## VIASH END

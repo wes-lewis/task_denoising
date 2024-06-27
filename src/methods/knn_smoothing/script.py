@@ -7,7 +7,7 @@ par = {
     'output': 'output_knn.h5ad',
 }
 meta = {
-    'functionality_name': 'foo',
+    'name': 'foo',
 }
 ## VIASH END
 
@@ -23,7 +23,7 @@ output = ad.AnnData(
     var=input_train.var[[]],
     uns={
         "dataset_id": input_train.uns["dataset_id"],
-        "method_id": meta["functionality_name"]
+        "method_id": meta["name"]
     }
 )
 

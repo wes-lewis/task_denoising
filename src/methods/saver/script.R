@@ -10,7 +10,7 @@ par <- list(
   output = "output.h5ad"
 )
 meta <- list(
-  functionality_name = "saver",
+  name = "saver",
   ncpus = 30
 )
 ## VIASH END
@@ -31,7 +31,7 @@ output <- AnnData(
   var = input_train$var[, c(), drop = FALSE],
   uns = list(
     dataset_id = input_train$uns[["dataset_id"]],
-    method_id = meta$functionality_name
+    method_id = meta$name
   )
 )
 

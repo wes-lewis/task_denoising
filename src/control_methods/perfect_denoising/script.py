@@ -7,7 +7,7 @@ par = {
     'output': 'output_PD.h5ad',
 }
 meta = {
-    'functionality_name': 'foo',
+    'name': 'foo',
 }
 ## VIASH END
 
@@ -18,7 +18,7 @@ input_test = ad.read_h5ad(par['input_test'])
 print("Process data", flush=True)
 input_train.layers["denoised"] = input_test.layers['counts']
 
-input_train.uns["method_id"] = meta['functionality_name']
+input_train.uns["method_id"] = meta['name']
 
 print("Write Data", flush=True)
 input_train.write_h5ad(par['output'],compression="gzip")

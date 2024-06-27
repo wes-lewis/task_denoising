@@ -10,7 +10,7 @@ par = {
     'output': 'output_mse.h5ad'
 }
 meta = {
-    'functionality_name': 'mse'
+    'name': 'mse'
 }
 ## VIASH END
 
@@ -43,7 +43,7 @@ output = ad.AnnData(
 )
 
 output.uns["method_id"] = input_denoised.uns["method_id"]
-output.uns["metric_ids"] = meta['functionality_name']
+output.uns["metric_ids"] = meta['name']
 output.uns["metric_values"] = error
 
 print("Write adata to file", flush=True)
