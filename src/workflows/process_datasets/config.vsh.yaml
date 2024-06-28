@@ -27,6 +27,7 @@ dependencies:
     repository:
       type: github
       repo: openproblems-bio/openproblems-v2
-  - name: denoising/process_dataset
+      tag: main_build
+  - name: process_dataset
 runners:
   - type: nextflow

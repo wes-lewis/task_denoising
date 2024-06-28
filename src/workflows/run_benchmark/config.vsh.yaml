@@ -53,20 +53,21 @@ resources:
     path: "../../api/task_info.yaml"
 dependencies:
   - name: common/check_dataset_schema
-    repository:
-      type: github
-      repo: openproblems-bio/openproblems-v2
+    repository: openproblems-v2
   - name: common/extract_metadata
-    repository:
-      type: github
-      repo: openproblems-bio/openproblems-v2
-  - name: denoising/control_methods/no_denoising
-  - name: denoising/control_methods/perfect_denoising
-  - name: denoising/methods/alra
-  - name: denoising/methods/dca
-  - name: denoising/methods/knn_smoothing
-  - name: denoising/methods/magic
-  - name: denoising/metrics/mse
-  - name: denoising/metrics/poisson
+    repository: openproblems-v2
+  - name: control_methods/no_denoising
+  - name: control_methods/perfect_denoising
+  - name: methods/alra
+  - name: methods/dca
+  - name: methods/knn_smoothing
+  - name: methods/magic
+  - name: metrics/mse
+  - name: metrics/poisson
+repositories:
+  - name: openproblems-v2
+    type: github
+    repo: openproblems-bio/openproblems-v2
+    tag: main_build
 runners:
   - type: nextflow

@@ -1,4 +1,3 @@
-namespace: "denoising"
 info:
   type: process_dataset
   type_info:
