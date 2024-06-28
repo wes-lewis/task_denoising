@@ -7,7 +7,7 @@ info:
     description: |
       A denoising method to remove noise (i.e. technical artifacts) from a dataset.
 arguments:
-  - name: --train_h5ad
+  - name: --input_train
     __merge__: file_train_h5ad.yaml
     required: true
     direction: input
@@ -21,5 +21,5 @@ test_resources:
   - type: python_script
     path: /common/component_tests/check_method_config.py
   - path: /common/library.bib
-  - path: /resources/denoising/pancreas
-    dest: resources/denoising/pancreas
+  - path: /resources_test/denoising/pancreas
+    dest: resources_test/denoising/pancreas
