@@ -1,5 +1,5 @@
 name: "run_benchmark"
-namespace: "denoising/workflows"
+namespace: "workflows"
 argument_groups:
   - name: Inputs
     arguments:

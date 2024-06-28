@@ -1,5 +1,5 @@
 name: "process_datasets"
-namespace: "denoising/workflows"
+namespace: "workflows"
 argument_groups:
   - name: Inputs
     arguments:
