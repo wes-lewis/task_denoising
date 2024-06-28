@@ -21,6 +21,9 @@ readme: |
   git clone git@github.com:openproblems-bio/task_denoising.git
 
   cd task_denoising
+
+  # initialise submodule
+  scripts/init_submodule.sh
   
   # download resources
   scripts/download_resources.sh
