@@ -4,7 +4,7 @@ import numpy as np
 
 ## VIASH START
 par = {
-    'input_denoised': 'output_magic.h5ad',
+    'input_prediction': 'output_magic.h5ad',
     'input_test': 'output_test.h5ad',
     'output': 'output_poisson.h5ad'
 }
