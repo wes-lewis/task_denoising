@@ -15,6 +15,9 @@ info:
     - type: s3
       path: s3://openproblems-data/resources_test/denoising/
       dest: resources_test/denoising
+    - type: s3
+      path: s3://openproblems-data/resources_test/common/
+      dest: resources_test/common
 
 
 version: dev
