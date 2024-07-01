@@ -21,9 +21,11 @@ engines:
     image: ghcr.io/openproblems-bio/base_python:1.0.4
     setup:
       - type: python
-        packages:
+        pypi:
           - scikit-learn
           - scprep
+          - numpy<2.0
+          - pandas<2.0
 runners:
   - type: executable
   - type: nextflow
