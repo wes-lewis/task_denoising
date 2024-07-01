@@ -24,8 +24,6 @@ engines:
         pypi:
           - scikit-learn
           - scprep
-          - numpy<2.0
-          - pandas<2.0
 runners:
   - type: executable
   - type: nextflow
