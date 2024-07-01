@@ -89,7 +89,7 @@ workflow run_wf {
       // use 'fromState' to fetch the arguments the component requires from the overall state
       fromState: [
         input_test: "input_test", 
-        input_denoised: "method_output"
+        input_prediction: "method_output"
       ],
       // use 'toState' to publish that component's outputs to the overall state
       toState: { id, output, state, comp ->
