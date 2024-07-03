@@ -28,6 +28,6 @@ dependencies:
       type: github
       repo: openproblems-bio/openproblems-v2
       tag: main_build
-  - name: process_dataset
+  - name: process_dataset/process_dataset
 runners:
   - type: nextflow

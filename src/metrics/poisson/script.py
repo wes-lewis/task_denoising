@@ -4,7 +4,7 @@ import numpy as np
 
 ## VIASH START
 par = {
-    'input_denoised': 'output_magic.h5ad',
+    'input_prediction': 'output_magic.h5ad',
     'input_test': 'output_test.h5ad',
     'output': 'output_poisson.h5ad'
 }
@@ -14,7 +14,7 @@ meta = {
 ## VIASH END
 
 print("Load Data", flush=True)
-input_denoised = ad.read_h5ad(par['input_denoised'], backed="r")
+input_denoised = ad.read_h5ad(par['input_prediction'], backed="r")
 input_test = ad.read_h5ad(par['input_test'], backed="r")
 
 test_data = scprep.utils.toarray(input_test.layers["counts"])

@@ -10,6 +10,16 @@ links:
   repository: https://github.com/openproblems-bio/task_denoising
   docker_registry: ghcr.io/openproblems-bio
 
+info:
+  test_resources:
+    - type: s3
+      path: s3://openproblems-data/resources_test/denoising/
+      dest: resources_test/denoising
+    - type: s3
+      path: s3://openproblems-data/resources_test/common/
+      dest: resources_test/common
+
+
 version: dev
 
 config_mods: |

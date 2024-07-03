@@ -6,7 +6,7 @@ import scprep
 ## VIASH START
 par = {
     'input_test': 'resources_test/denoising/pancreas/test.h5ad',
-    'input_denoised': 'resources_test/denoising/pancreas/magic.h5ad',
+    'input_prediction': 'resources_test/denoising/pancreas/denoised.h5ad',
     'output': 'output_mse.h5ad'
 }
 meta = {
@@ -15,7 +15,7 @@ meta = {
 ## VIASH END
 
 print("Load data", flush=True)
-input_denoised = ad.read_h5ad(par['input_denoised'], backed="r")
+input_denoised = ad.read_h5ad(par['input_prediction'], backed="r")
 input_test = ad.read_h5ad(par['input_test'], backed="r")
 
 test_data = ad.AnnData(X=input_test.layers["counts"], dtype="float")
@@ -26,7 +26,7 @@ print("Normalize data", flush=True)
 # scaling and transformation
 target_sum = 10000
 
-sc.pp.normalize_total(test_data, target_sum)
+sc.pp.normalize_total(test_data, target_sum=target_sum)
 sc.pp.log1p(test_data)
 
 sc.pp.normalize_total(denoised_data, target_sum)
