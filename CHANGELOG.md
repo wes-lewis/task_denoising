@@ -1,9 +1,10 @@
 # denoising 0.1.0
 
-### MAJOR CHANGES
+## BREAKING CHANGES
 
 * Update to viash 0.9.0 RC6
 
+* Directory structure has been updated.
 
 
 ## transfer from openproblems-v2 repository
