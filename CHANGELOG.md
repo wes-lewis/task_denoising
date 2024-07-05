@@ -6,6 +6,9 @@
 
 * Directory structure has been updated.
 
+## NEW FUNCTIONALITY
+
+* Add `CHANGELOG.md` (PR #7)
 
 ## transfer from openproblems-v2 repository
 
