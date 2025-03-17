@@ -52,6 +52,8 @@
 
 * Add `dataset_organism` to training input files (PR #24)
 
+* Remove functionality of 'n_obs_limit' parameter, in favor of using full datasets.
+
 ## BUG FIXES
 
 * Update the nextflow workflow dependencies (PR #17).
